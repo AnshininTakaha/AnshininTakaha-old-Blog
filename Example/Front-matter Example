@@ -1,0 +1,28 @@
+title:
+date:
+author:
+img:
+top:
+cover:
+coverImg:
+password:
+toc:
+mathjax:
+summary:
+categories:
+tags:
+
+
+title:      题目，也就是主题介绍
+date:       日期，格式示例2018-09-07 09:25:00
+author:     作者名字
+img:        图片地址，格式/source/images/xxx.jpg，也可以用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/xxx.jpg
+top:        文章是否推荐置顶
+cover:      是否加入到封面轮播中
+coverImg:   文章在封面轮播的时候需要显示的图片路径，如果没有就使用则使用文章的特色图片
+password:   阅读密码
+toc:        目录功能
+mathjax:    数学工具支持
+summary:    文章摘要
+categories: 文章分类
+tags:       文章标签

@@ -270,7 +270,7 @@ mark {
 /*导航栏颜色和透明效果*/
 .bg-color {
     background-image: linear-gradient(to right, #d3ade6 0%, #5bd1b8 100%);
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .text-color {
@@ -710,7 +710,7 @@ header .go-back i {
     }
 
     80% {
-        background: rgba(94, 121, 141, 0.5);
+       background: rgba(94, 121, 141, 0.5);
         background: linear-gradient(45deg, rgba(94, 121, 141, 0.5)0%, rgba(94, 121, 141, 0.5) 100%);
         background: -moz-linear-gradient(135deg, rgba(94, 121, 141, 0.5) 0%, rgba(94, 121, 141, 0.5) 100%);
         background: -webkit-linear-gradient(135deg, rgba(94, 121, 141, 0.5) 0%, rgba(94, 121, 141, 0.5) 100%);

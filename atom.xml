@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-26T14:12:25.296Z</updated>
+  <updated>2020-11-26T14:15:07.595Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,18 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>VESC Toolʹ�ñʼ�֮����궨�ͳ�ʼ��</title>
+    <title>VESC Tool使用笔记之电机标定和初始化</title>
     <link href="http://example.com/2020/11/26/VSEC1/"/>
     <id>http://example.com/2020/11/26/VSEC1/</id>
     <published>2020-11-26T13:00:00.000Z</published>
-    <updated>2020-11-26T14:12:25.296Z</updated>
+    <updated>2020-11-26T14:15:07.595Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;ʹ�÷���&quot;&gt;&lt;a href=&quot;#ʹ�÷���&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;使用步骤&quot;&gt;&lt;a href=&quot;#使用步骤&quot; class=&quot;headerlink&quot;</summary>
         
       
     

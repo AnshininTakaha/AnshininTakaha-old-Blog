@@ -298,11 +298,11 @@
                 
                 
                 
-                <a href="/categories/First/" title="First: 1">
+                <a href="/categories/First/" title="First: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-active "
                             style="background-color: #F9EBEA;">First
-                        <span class="tag-length">1</span>
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -320,13 +320,63 @@
             
             <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
+                    <a href="/2020/11/26/VSEC1/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/loading/3.gif" data-original="/medias/featureimages/M3.jpg" class="responsive-img" alt="VESC Toolʹ�ñʼ�֮����궨�ͳ�ʼ��">
+                            
+                            <span class="card-title">VESC Toolʹ�ñʼ�֮����궨�ͳ�ʼ��</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                VESC Toolʹ�ñʼ�֮����궨�ͳ�ʼ��
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/First/" class="post-category">
+                                    First
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/STM32/">
+                            <span class="chip bg-color">STM32</span>
+                        </a>
+                        
+                        <a href="/tags/VESC-Tool/">
+                            <span class="chip bg-color">VESC Tool</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
                     <a href="/2020/11/22/hello-world/">
                         <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/loading/3.gif" data-original="/medias/featureimages/M2.jpg" class="responsive-img" alt="我的第一篇blog文章owo">
+                            <img src="/medias/loading/3.gif" data-original="/medias/featureimages/M1.jpg" class="responsive-img" alt="Markdown的基本用法">
                             
-                            <span class="card-title">我的第一篇blog文章owo</span>
+                            <span class="card-title">Markdown的基本用法</span>
                         </div>
                     </a>
                     <div class="card-content article-content">
@@ -403,7 +453,50 @@ Markdown 示例注意大部分在符号前面需要加一个小空格
             </span>
             
             <br>
-            
+            <span id="sitetime"class="white-color">载入运行时间...</span>
+            <script>
+                function siteTime() {
+                    var seconds = 1000;
+                    var minutes = seconds * 60;
+                    var hours = minutes * 60;
+                    var days = hours * 24;
+                    var years = days * 365;
+                    var today = new Date();
+                    var startYear = "2020";
+                    var startMonth = "11";
+                    var startDate = "21";
+                    var startHour = "0";
+                    var startMinute = "0";
+                    var startSecond = "0";
+                    var todayYear = today.getFullYear();
+                    var todayMonth = today.getMonth() + 1;
+                    var todayDate = today.getDate();
+                    var todayHour = today.getHours();
+                    var todayMinute = today.getMinutes();
+                    var todaySecond = today.getSeconds();
+                    var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                    var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                    var diff = t2 - t1;
+                    var diffYears = Math.floor(diff / years);
+                    var diffDays = Math.floor((diff / days) - diffYears * 365);
+                    var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+                    var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) /
+                        minutes);
+                    var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours -
+                        diffMinutes * minutes) / seconds);
+                    if (startYear == todayYear) {
+                        document.getElementById("year").innerHTML = todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffDays + " 天 " + diffHours +
+                            " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    } else {
+                        document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                        document.getElementById("sitetime").innerHTML = "本站已安全运行 " + diffYears + " 年 " + diffDays +
+                            " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+                    }
+                }
+                setInterval(siteTime, 1000);
+            </script>
+            <br>
             <br>
             
         </div>

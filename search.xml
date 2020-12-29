@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>VESC Tool之一、使用笔记之电机标定和初始化</title>
+      <link href="2020/12/29/VSEC1/"/>
+      <url>2020/12/29/VSEC1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="连接电机和参数标定"><a href="#连接电机和参数标定" class="headerlink" title="连接电机和参数标定"></a>连接电机和参数标定</h2><ol><li>电调USB连接电脑，然后点上位机右上角的连接按钮，当右下角出现(Connected (serial) to COMXX)的时候，表示电机连接成功。</li></ol><p><img src="https://i.loli.net/2020/12/29/3isByTEd6c4mRPt.jpg" alt="电机连接按钮"></p><p><img src="https://i.loli.net/2020/12/29/4Ul9eYyIVTkZNES.jpg" alt="表示电机连接成功"></p><ol start="2"><li><p>然后开始配置电机参数以及传感器参数：</p><ul><li><p>Motor界面按照电机的重量和电机型号来标定电机类型。注意这里一定要选择正确的电机型号，否则电机要不电压不对炸掉或者出一些奇奇怪怪的问题。<br><img src="https://i.loli.net/2020/12/29/qOKbgor9li1745p.jpg" alt="电机选型界面"></p></li><li><p>Battery界面按照使用的电池进行参数的选择：</p><ul><li>type：电池类型：锂离子电池/锂铁电池。这里选择锂离子电池，单节电池的电压范围3.0-4.2。</li><li>cells series：电池串联数：电池是多少s的就填多少。如6s就填6。</li><li>capacity：电池容量：注意单位是安时。如4500mAh就填0.45Ah。<br><img src="https://i.loli.net/2020/12/29/hWOfXjDLGAMNdvb.jpg" alt="Battery界面"></li></ul></li><li><p>设置这里电机减速比，轮子大小，没有减速箱就选直驱。<br><img src="https://i.loli.net/2020/12/29/E3yg4f7olvpSItc.jpg" alt="电机减速比"></p></li><li><p>下一步就开始测量电机参数，记得把浆，轮子什么的拆掉，以免影响测量，电机参数测量过程中电机会发出噪声属于正常现象。<br><img src="https://i.loli.net/2020/12/29/SPYwfaJb9tZ6iMe.jpg" alt="测量电机参数"></p></li><li><p>这里可以设置电机的正反转方向：<br><img src="https://i.loli.net/2020/12/29/wzQgRdItbYo1AB5.jpg" alt="电机转向"></p></li></ul></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> First </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> STM32 </tag>
+            
+            <tag> VESC Tool </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>考完研之后的感想</title>
       <link href="2020/12/28/Testing_Feeling/"/>
       <url>2020/12/28/Testing_Feeling/</url>
@@ -21,33 +48,6 @@
         <tags>
             
             <tag> 考研感受 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>VESC Tool之一、使用笔记之电机标定和初始化</title>
-      <link href="2020/11/26/VSEC1/"/>
-      <url>2020/11/26/VSEC1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h1><h2 id="连接电机和参数标定"><a href="#连接电机和参数标定" class="headerlink" title="连接电机和参数标定"></a>连接电机和参数标定</h2><ol><li>电调USB连接电脑，然后点上位机右上角的连接按钮，当右下角出现(Connected (serial) to COMXX)的时候，表示电机连接成功。</li></ol><p><img src="https://i.loli.net/2020/12/29/3isByTEd6c4mRPt.jpg" alt="电机连接按钮"></p><p><img src="https://i.loli.net/2020/12/29/4Ul9eYyIVTkZNES.jpg" alt="表示电机连接成功"></p><ol start="2"><li><p>然后开始配置电机参数以及传感器参数：</p><ul><li><p>Motor界面按照电机的重量和电机型号来标定电机类型。注意这里一定要选择正确的电机型号，否则电机要不电压不对炸掉或者出一些奇奇怪怪的问题。<br><img src="https://i.loli.net/2020/12/29/qOKbgor9li1745p.jpg" alt="电机选型界面"></p></li><li><p>Battery界面按照使用的电池进行参数的选择：</p><ul><li>type：电池类型：锂离子电池/锂铁电池。这里选择锂离子电池，单节电池的电压范围3.0-4.2。</li><li>cells series：电池串联数：电池是多少s的就填多少。如6s就填6。</li><li>capacity：电池容量：注意单位是安时。如4500mAh就填0.45Ah。<br><img src="https://i.loli.net/2020/12/29/hWOfXjDLGAMNdvb.jpg" alt="Battery界面"></li></ul></li><li><p>设置这里电机减速比，轮子大小，没有减速箱就选直驱。<br><img src="https://i.loli.net/2020/12/29/E3yg4f7olvpSItc.jpg" alt="电机减速比"></p></li><li><p>下一步就开始测量电机参数，记得把浆，轮子什么的拆掉，以免影响测量，电机参数测量过程中电机会发出噪声属于正常现象。<br><img src="https://i.loli.net/2020/12/29/SPYwfaJb9tZ6iMe.jpg" alt="测量电机参数"></p></li><li><p>这里可以设置电机的正反转方向：<br><img src="https://i.loli.net/2020/12/29/wzQgRdItbYo1AB5.jpg" alt="电机转向"></p></li></ul></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> First </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> STM32 </tag>
-            
-            <tag> VESC Tool </tag>
             
         </tags>
       

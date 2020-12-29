@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-11-26T14:15:07.595Z</updated>
+  <updated>2020-12-28T07:25:25.513Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>������֮��ĸ���</title>
+    <link href="http://example.com/2020/12/28/Testing_Feeling/"/>
+    <id>http://example.com/2020/12/28/Testing_Feeling/</id>
+    <published>2020-12-28T13:00:00.000Z</published>
+    <updated>2020-12-28T07:25:25.513Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;����֮��ĸ���&quot;&gt;&lt;a href=&quot;#����֮��ĸ���&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="����" scheme="http://example.com/categories/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+    
+    
+    <category term="���и���" scheme="http://example.com/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%D0%B8%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VESC Tool使用笔记之电机标定和初始化</title>
     <link href="http://example.com/2020/11/26/VSEC1/"/>
     <id>http://example.com/2020/11/26/VSEC1/</id>
     <published>2020-11-26T13:00:00.000Z</published>
-    <updated>2020-11-26T14:15:07.595Z</updated>
+    <updated>2020-12-28T07:04:58.975Z</updated>
     
     
       

@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-13T08:49:20.897Z</updated>
+  <updated>2021-01-13T08:51:06.134Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/01/12/VSEC1/"/>
     <id>http://example.com/2021/01/12/VSEC1/</id>
     <published>2021-01-12T04:00:00.000Z</published>
-    <updated>2021-01-13T08:49:20.897Z</updated>
+    <updated>2021-01-13T08:51:06.134Z</updated>
     
     
       
@@ -34,6 +34,8 @@
       
     
     
+    
+    <category term="STM32" scheme="http://example.com/categories/STM32/"/>
     
     
     <category term="STM32" scheme="http://example.com/tags/STM32/"/>

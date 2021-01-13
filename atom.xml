@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2020-12-29T13:30:57.551Z</updated>
+  <updated>2021-01-13T08:49:20.897Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,24 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>VESC Tool之一、使用笔记之电机标定和初始化</title>
-    <link href="http://example.com/2020/12/29/VSEC1/"/>
-    <id>http://example.com/2020/12/29/VSEC1/</id>
-    <published>2020-12-29T13:00:00.000Z</published>
-    <updated>2020-12-29T13:30:57.551Z</updated>
+    <title>VESC_Tool基本操作食用指北</title>
+    <link href="http://example.com/2021/01/12/VSEC1/"/>
+    <id>http://example.com/2021/01/12/VSEC1/</id>
+    <published>2021-01-12T04:00:00.000Z</published>
+    <updated>2021-01-13T08:49:20.897Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;使用步骤&quot;&gt;&lt;a href=&quot;#使用步骤&quot; class=&quot;headerlink&quot; title=&quot;使用步骤&quot;&gt;&lt;/a&gt;使用步骤&lt;/h1&gt;&lt;h2 id=&quot;连接电机和参数标定&quot;&gt;&lt;a href=&quot;#连接电机和参数标定&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;p&gt;此教程会随着时间的推移继续更新&lt;br&gt;会把我调VESC轮子中一些比较关键的点写在这里&lt;/p&gt;
+&lt;h1 id=&quot;使用步骤&quot;&gt;&lt;a href=&quot;#使用步骤&quot; class=&quot;headerlink&quot; title=&quot;使用步骤&quot;&gt;&lt;/a&gt;使用步骤&lt;/h1&gt;&lt;h2</summary>
         
       
     
     
-    
-    <category term="First" scheme="http://example.com/categories/First/"/>
     
     
     <category term="STM32" scheme="http://example.com/tags/STM32/"/>
@@ -44,11 +43,11 @@
   </entry>
   
   <entry>
-    <title>考完研之后的感想</title>
+    <title>初战考完研之后的感想</title>
     <link href="http://example.com/2020/12/28/Testing_Feeling/"/>
     <id>http://example.com/2020/12/28/Testing_Feeling/</id>
     <published>2020-12-28T13:00:00.000Z</published>
-    <updated>2020-12-29T13:38:59.410Z</updated>
+    <updated>2021-01-12T05:35:49.019Z</updated>
     
     
       

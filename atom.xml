@@ -69,4 +69,60 @@
     
   </entry>
   
+  <entry>
+    <title>IOT_Links ����Ƕ��ʽ������VscodeǶ��ʽ��ȫ���ɣ���Keil˵�ټ�</title>
+    <link href="http://example.com/2020/01/13/Keil_Assitance/"/>
+    <id>http://example.com/2020/01/13/Keil_Assitance/</id>
+    <published>2020-01-13T13:00:00.000Z</published>
+    <updated>2021-01-14T03:39:57.482Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;����ԭ��&quot;&gt;&lt;a href=&quot;#����ԭ��&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="STM32" scheme="http://example.com/categories/STM32/"/>
+    
+    
+    <category term="STM32" scheme="http://example.com/tags/STM32/"/>
+    
+    <category term="STM32 IDE�Ż�" scheme="http://example.com/tags/STM32-IDE%EF%BF%BDZ%EF%BF%BD/"/>
+    
+    <category term="iot Links" scheme="http://example.com/tags/iot-Links/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>STM32���������ٳ�</title>
+    <link href="http://example.com/2020/01/13/STM32_All_in_One/"/>
+    <id>http://example.com/2020/01/13/STM32_All_in_One/</id>
+    <published>2020-01-13T13:00:00.000Z</published>
+    <updated>2021-01-13T09:22:34.819Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;�ر�˵��&quot;&gt;&lt;a href=&quot;#�ر�˵��&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="STM32" scheme="http://example.com/categories/STM32/"/>
+    
+    
+    <category term="STM32" scheme="http://example.com/tags/STM32/"/>
+    
+    <category term="STM32�ٳ�" scheme="http://example.com/tags/STM32%EF%BF%BD%D9%B3%EF%BF%BD/"/>
+    
+  </entry>
+  
 </feed>

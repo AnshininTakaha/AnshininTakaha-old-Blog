@@ -29,10 +29,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0">
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="Anshinin's Working house" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Anshinin's Working house" type="application/atom+xml">
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+</head>
 
 
 <body>
@@ -439,6 +439,7 @@
 <p><a target="_blank" rel="noopener" href="https://flyfishzy.github.io/iotstudio-doc/zh/tutorial">Iot Links集成教程</a></p>
 <p><a target="_blank" rel="noopener" href="https://bbs.huaweicloud.com/forum/thread-23719-1-1.html">Iot Links调试器设置</a></p>
 <p><a target="_blank" rel="noopener" href="https://github.com/vllogic/openocd_cmsis-dap_v2">Dap-V2资料</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qwe5959798/article/details/112367495">Stm32—CubeMx中makefile原理解析</a></p>
 <p>部分重要插件下载地址：</p>
 <p><a target="_blank" rel="noopener" href="https://gnutoolchains.com/arm-eabi/openocd/">OpenOCD Download</a></p>
 <p><a target="_blank" rel="noopener" href="http://www.codeblocks.org/">CodeBlocks Download Site</a></p>
@@ -510,7 +511,7 @@
 <p><img src="/medias/loading/3.gif" data-original="https://i.loli.net/2021/01/14/5JAGW8MnIyfzCYN.png" alt="iot Link调试器设置"></p>
 <ul>
 <li>请在OOCD路径填入你刚刚<strong>右键打开PowerShell的目录的地址，加上一个openocd.exe。</strong></li>
-<li>请在OOCD参数填入你<strong>刚刚激活板子的两个命令中你使用的那一条。</strong></li>
+<li>请在OOCD参数填入你<strong>刚刚激活板子的两个命令中你使用的那一条,但是前面去掉./openocd。s</strong></li>
 </ul>
 <ol start="4">
 <li>将以下的三个地址加入电脑的环境变量中：</li>
@@ -620,6 +621,27 @@ C:\Users\...\.iotlink\tools\gcc-arm-none-eabi\arm-none-eabi\bin</code></pre>
 <h4 id="串口"><a href="#串口" class="headerlink" title="串口"></a>串口</h4><ul>
 <li>串口功能我还没尝试，以后会逐渐更新本教程！</li>
 </ul>
+<h2 id="makefile和keil里面配置的对应接口配置"><a href="#makefile和keil里面配置的对应接口配置" class="headerlink" title="makefile和keil里面配置的对应接口配置"></a>makefile和keil里面配置的对应接口配置</h2><h3 id="为什么要写这个东西？"><a href="#为什么要写这个东西？" class="headerlink" title="为什么要写这个东西？"></a>为什么要写这个东西？</h3><p>第一个是因为在实际操作中，我发现了当用户（也就是写代码的人）要添加客户文件的时候，我们需要更改cmake里面的一些东西，来达到我们目的。</p>
+<p>老实说在写这段之前，我尝试过去理解和更改makefile里面的内容，最后终于成功的写出了客户添加用户代码的编译更改方法。</p>
+<h3 id="当客户添加一个-c-h文件的时候："><a href="#当客户添加一个-c-h文件的时候：" class="headerlink" title="当客户添加一个.c/.h文件的时候："></a>当客户添加一个.c/.h文件的时候：</h3><p>首先，在添加的时候我们必须明白两点东西。</p>
+<ol>
+<li><p>你的makefile在哪里？一般是在你的文件夹的第一层子目录。</p>
+</li>
+<li><p>我加的.c/.h文件的目录在文件的哪里？我等会要怎么做？</p>
+</li>
+<li><p>我要改makefile哪个地方的东西？</p>
+</li>
+</ol>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>请参考我上文给出的 “Stm32—CubeMx中makefile原理解析” 连接</p>
+<h3 id="关于-c文件"><a href="#关于-c文件" class="headerlink" title="关于.c文件"></a>关于.c文件</h3><p>当用户添加一个.c文件的时候，我们需要<strong>将.c文件的完整地址</strong>添加到C sources列表下面。</p>
+<p><img src="/medias/loading/3.gif" data-original="https://i.loli.net/2021/01/15/5qYKF3a6cMoujhB.png" alt="C sources文件"></p>
+<p>假设，我在User文件夹新建了一个BSP_CAN.c文件，那么我在C sources文件列表下需要添加的东西就是：</p>
+<pre class=" language-C"><code class="language-C">User/BSP_CAN.c \</code></pre>
+<h3 id="关于-h文件"><a href="#关于-h文件" class="headerlink" title="关于.h文件"></a>关于.h文件</h3><p>当用户添加一个.h文件的时候，我们需要<strong>将.h文件的父级目录地址</strong>添加到C sources列表下面。</p>
+<p><img src="/medias/loading/3.gif" data-original="https://i.loli.net/2021/01/15/xBVEwZXYT29gLjt.png" alt="H sources文件"></p>
+<p>假设，我在User文件夹新建了一个BSP_CAN.h文件，那么我在H sources文件列表下需要添加的东西就是：</p>
+<pre class=" language-C"><code class="language-C">User \</code></pre>
+<p>PS：无论是C Sources还是H Sources在更新CubeMx的代码并生成的时候都不会被覆盖，只会在对应的列后面增加新的变量，所以无需担心被覆盖问题！！</p>
 <h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>如果你觉得本教程对你来说非常有用：</p>
 <ol>
 <li><p>分享给你身边的嵌入佬！大家一起Happy！</p>

@@ -29,10 +29,10 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"><link rel="alternate" href="/atom.xml" title="Anshinin's Working house" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.2.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
+<link rel="alternate" href="/atom.xml" title="Anshinin's Working house" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -543,10 +543,13 @@
 <li>回到刚刚导入工程的Vscode，选择.vscode文件夹里面自动生成的c_cpp_properties.json</li>
 </ol>
 <ul>
-<li>将”compilerPath”：更换成为刚刚复制的地址 + /gcc.exe</li>
+<li><p>将”compilerPath”：更换成为刚刚复制的地址 + /gcc.exe</p>
+</li>
+<li><p>（当然你也可以用iot自带的默认的gcc，实际上只要你有gcc环境运行系统的或者他封装好给你的gcc都是一样的）</p>
+</li>
 </ul>
 <p><img src="/medias/loading/3.gif" data-original="https://i.loli.net/2021/01/14/T4KjgiJhNDBcUeA.png" alt="gcc编译器地址更改"></p>
-<ol start="3">
+<ol>
 <li>在”defines”中将Keil编译器Debug中的C/C++上面的两个宏定义和四个基础宏定义填入。（不一定是两个，具体看你工程的情况）</li>
 </ol>
 <ul>

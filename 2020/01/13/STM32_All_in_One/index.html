@@ -469,7 +469,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-01-28
+                    2021-02-01
                 </div>
                 
 
@@ -582,7 +582,242 @@ void GPIO_QuickInit(void)
 <li>注意，LED灯是低电平的时候亮，高电平的时候不亮</li>
 <li>使用的时候注意配置头文件的包含关系，不要循环包含，否则在编译情况下有可能会出现报错的情况。</li>
 </ol>
-<h2 id="RCC输出引脚MCO的初始化和使用"><a href="#RCC输出引脚MCO的初始化和使用" class="headerlink" title="RCC输出引脚MCO的初始化和使用"></a>RCC输出引脚MCO的初始化和使用</h2>
+<h2 id="KEY按键实验"><a href="#KEY按键实验" class="headerlink" title="KEY按键实验"></a>KEY按键实验</h2><p>初始化按键，捕获使用者按下按键的瞬间而做出对应的反应</p>
+<pre class=" language-C"><code class="language-C">//按键初始化
+void KEY_Config(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOD|RCC_APB2Periph_GPIOE,ENABLE);
+
+    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_4;
+    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING;
+    GPIO_Init(GPIOA,&GPIO_InitStructure);//PA4
+
+    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_5;
+    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING;
+    GPIO_Init(GPIOA,&GPIO_InitStructure);//PA5
+
+    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_15;
+    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IN_FLOATING;
+    GPIO_Init(GPIOE,&GPIO_InitStructure);//PE15
+
+}</code></pre>
+<pre class=" language-C"><code class="language-C">//判断按键是否呗按下
+uint8_t KEY_SCAN(GPIO_TypeDef*GPIOx,uint16_t GPIO_Pin)//按键识别是否开着
+{
+    if(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin)==1)//是否按下去
+    {
+        while(GPIO_ReadInputDataBit(GPIOx,GPIO_Pin)==1)//是否按着
+        {
+            ;
+        }
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+</code></pre>
+<h2 id="RCC输出引脚MCO的初始化和使用（一般这个只是为了检查板子的晶振是否正常而使用）"><a href="#RCC输出引脚MCO的初始化和使用（一般这个只是为了检查板子的晶振是否正常而使用）" class="headerlink" title="RCC输出引脚MCO的初始化和使用（一般这个只是为了检查板子的晶振是否正常而使用）"></a>RCC输出引脚MCO的初始化和使用（一般这个只是为了检查板子的晶振是否正常而使用）</h2><p>MCO作为时钟系统唯一的（大概）输出的引脚，作用十分十分十分的弱鸡（基本上没用过），<br>这里的实验用示波器来检测引脚的律动，所以要先使能MCO的引脚（MCO的引脚在每一个板子上面都是不同的）。</p>
+<pre class=" language-C"><code class="language-C">//初始化MCO引脚
+void MCO_Config(void)
+{
+    GPIO_InitTypeDef GPIO_InitStructure;
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
+    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_8;
+    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_AF_PP;
+    GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
+    GPIO_Init(GPIOA,&GPIO_InitStructure);
+    RCC_MCOConfig(RCC_MCO_SYSCLK);//选择输出模式为MCO
+}
+</code></pre>
+<h2 id="HSE-HSI时钟的初始化和使用"><a href="#HSE-HSI时钟的初始化和使用" class="headerlink" title="HSE\HSI时钟的初始化和使用"></a>HSE\HSI时钟的初始化和使用</h2><p>也就是RCC时钟，使用频率非常低</p>
+<table>
+<thead>
+<tr>
+<th>对应的时钟源</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>HSI</td>
+<td>可以直接用作系统时钟，成本较低，启动速度比HSI快</td>
+<td>精度较低（即使在校准之后也是较低）</td>
+</tr>
+<tr>
+<td>HSE</td>
+<td>精度较高</td>
+<td>一般情况下晶振的体积较大</td>
+</tr>
+</tbody></table>
+<p>另外HSI又分为有源晶振和无源晶振，<strong>我们一般板子上的都是无源晶振</strong></p>
+<p>无源晶振为crystal（晶体）无源晶振是有2个引脚的无极性元件，需要借助于时钟电路才能产生振荡信号，自身无法振荡起来；有源晶振则叫做oscillator（振荡器）。</p>
+<p>有源晶振有4只引脚，是一个完整的振荡器，其中除了石英晶体外，还有晶体管和阻容元件，因此体积较大。</p>
+<pre class=" language-C"><code class="language-C">//外部晶振HSE时钟初始化代码
+void HSE_SetSysClock(uint32_t pllmul)
+{
+    RCC_DeInit();                               //复位RCC时钟中的所有的寄存器
+    RCC_HSEConfig(RCC_HSE_ON);                  //启动HSE 外部高速时钟
+    //HSEStartUpStatus = RCC_WaitForHSEStartUp(); //启动后等待它初始化（赋值判断法）
+    //if(RCC_WaitForHSEStartUp()==SUCCESS)        //如果HSE启动完成了（等待准备完成）  
+    //while(RCC_GetFlagStatus(RCC_FLAG_PLLRDY)==RESET)//准备完成则跳出循环      
+    //{
+    //    ;
+    //}
+/****************************************************************************************/
+    if(RCC_GetFlagStatus(RCC_FLAG_HSERDY)==SET)//RCC启动完成
+    {
+        RCC_HCLKConfig(RCC_SYSCLK_Div1);//SYSCLK的时钟值赋给HCLK，分频为1.（只能赋值到上一级）
+
+        RCC_PCLK2Config(RCC_HCLK_Div1);//HCLK的时钟值赋给PCLK2,分频为1.
+
+        RCC_PCLK1Config(RCC_HCLK_Div2);//HCLK的时钟值赋给PCLK1,分频为2.       HCLK/2->PCLK1
+
+    }
+
+    RCC_PLLCmd(ENABLE);//使能PLL
+
+    while(RCC_GetFlagStatus(RCC_FLAG_PLLRDY)==RESET)//准备成功后才跳出循环
+    {
+        ;
+    }
+
+    //RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);//使能SYSCLK时钟，值从PLLCLK里面取
+
+    RCC_PLLConfig(RCC_PLLSource_HSE_Div1,pllmul);//先给PLL倍频
+
+    RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);//使能SYSCLK时钟，值从PLLCLK里面取
+
+    while(RCC_GetSYSCLKSource()!=0x08)//防止时钟爆炸
+    {
+        ;
+    }
+
+}</code></pre>
+<pre class=" language-C"><code class="language-C">//内部时钟HSI启动代码
+void HSI_SetSysClock(uint32_t pllmul)
+{
+    RCC_DeInit();
+    RCC_HSICmd(ENABLE);
+    if(RCC_GetFlagStatus(RCC_FLAG_HSIRDY)==SET)
+    {    
+        RCC_HCLKConfig(RCC_SYSCLK_Div1);
+        RCC_PCLK1Config(RCC_HCLK_Div2);
+        RCC_PCLK2Config(RCC_HCLK_Div1);
+    }
+    RCC_PLLConfig(RCC_PLLSource_HSI_Div2,RCC_PLLMul_2);//先设置在启动
+    RCC_PLLCmd(ENABLE);//或者通过PLL启动，不同的就是PLL有倍频器
+    RCC_SYSCLKConfig(RCC_SYSCLKSource_HSI);//直接启动
+    /************************************************************************/
+
+    while(RCC_GetFlagStatus(RCC_FLAG_PLLRDY)==RESET)
+    {
+        ;
+    }
+    RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK);//PLL稳定之后才能够切换成SYSCLK
+
+    while(RCC_GetSYSCLKSource()!=0X08)
+    {
+        ;
+    }
+    RCC_PLLConfig(RCC_PLLSource_HSE_Div1,RCC_PLLMul_3);
+}
+</code></pre>
+<h2 id="NVIC原理和使用"><a href="#NVIC原理和使用" class="headerlink" title="NVIC原理和使用"></a>NVIC原理和使用</h2><p>首先需要牢记NVIC中断系统的基本打断规则：</p>
+<ol>
+<li><p>高优先级的抢占优先级中断可以打断正在进行的底抢占优先级的中断</p>
+</li>
+<li><p>若抢占优先级相同，高响应级的不可以打断底响应级的（如果两个同时运行，相应级高的先运行）</p>
+</li>
+<li><p>如果抢占级和响应级都相同，哪个中断先发生就行执行（也就是根据实际情况来决定是哪个中断先走）!</p>
+</li>
+</ol>
+<p>三个重要的点：</p>
+<ol>
+<li><p>真值的问题</p>
+<p> 所谓的真值就是在规定中断优先级分组之后，对应的组能取的抢占优先级和响应优先级的级数范围</p>
+<p> 真值表：</p>
+<table>
+<thead>
+<tr>
+<th>K：组别</th>
+<th>抢占优先级</th>
+<th>响应优先级</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>2的0次方=1，0</td>
+<td>2的4次方=16，0~15</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2的1次方=2，0~1</td>
+<td>2的3次方=8，0~7</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2的2次方=4，0~3</td>
+<td>2的2次方=4，0~3</td>
+</tr>
+<tr>
+<td>3</td>
+<td>2的3次方=8，0~7</td>
+<td>2的1次方=2，0~1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>2的4次方=16，0~15</td>
+<td>2的0次方=1，0</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<ol start="2">
+<li><p>中断口的设置的问题：</p>
+<p> 也就是NVIC_InitStructure.NVIC_IRQChannel函数的设置；</p>
+<p> 当NVIC设置为中断口的时候，注意端口的设置的问题</p>
+<p> 如果是选择PX（0<del>4）：就用**EXTI（0</del>4）**</p>
+<p> 如果是PX（5~9）：就用<strong>EXTI9_5_IRQn</strong></p>
+<p> 如果是PX (10~15)：就用<strong>EXTI15_10_IRQn</strong></p>
+</li>
+</ol>
+<ol start="3">
+<li><p>数字越小，优先级越高！！！！！！</p>
+<p> 也就是说，假设我优先级分组是二</p>
+<p> 中断1的抢占是2，响应是1</p>
+<p> 中断2的抢占是3，响应是0</p>
+<p> 中断3的响应是2，响应是0</p>
+<p> <strong>那执行顺序是3，1，2</strong></p>
+</li>
+</ol>
+<pre class=" language-C"><code class="language-C">//NVIC中断初始化
+
+void NVIC_Config()
+{
+    NVIC_ProrityGroupConfig(uint32_t NVIC_ProrityGroup_1);//中断分组为1
+    NVIC_InitTypeDef NVIC_InitStructure;//初始化结构体
+    NVIC_InitStructure.NVIC_IRQChannel=EXTI4_IRQn;
+    NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1;
+    NVIC_InitStructure.NVIC_IRQChannelSubPriority=1;
+    NVIC_InitStructure.NVIC_IRQChannelCmd=ENABLE;
+    NVIC_Init(&NVIC_InitStructure);//PA4按键中断封装
+}</code></pre>
+<h2 id="AFIO复用专题"><a href="#AFIO复用专题" class="headerlink" title="AFIO复用专题"></a>AFIO复用专题</h2><p>需要用到外设的重映射功能时才需要使能AFIO的时钟</p>
+<p>为什么要复用？有时候我们会出现两个模块用同一个引脚的情况，这个时候我们需要复用</p>
+<p>外部中断（EXTI）中与AFIO有关的寄存器是AFIO-EXTICR1、2、3，它们是用来选择EXTIx外部中断的输入脚之用。</p>
+<p>举例：重映射USART2</p>
+<p>USART2的TX/RX在PA.2/3 PA.2已经被Timer2的channel3使用需要把USART2的TX/RX重映射到PD.5/6库函数的调用</p>
+<p>(1)使能被重新映射到的I/O端口时钟</p>
+<p>&nbsp;&nbsp;&nbsp; RCC_APB2PeriphClockCmd(RCC_APB2P OD, ENABLE);</p>
+<p>(2)使能被重新映射的外设时钟</p>
+<p>&nbsp;&nbsp;&nbsp; RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);</p>
+<p>(3)使能AFIO功能的时钟(勿忘！)</p>
+<p>&nbsp;&nbsp;&nbsp; RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);</p>
+<p>(4)进行重映射<br>&nbsp;<br>&nbsp;&nbsp;&nbsp; GPIO_PinRemapConfig(GPIO_Remap_USART2, ENABLE);</p>
+<h2 id="USART串口通讯实验，串口初始化"><a href="#USART串口通讯实验，串口初始化" class="headerlink" title="USART串口通讯实验，串口初始化"></a>USART串口通讯实验，串口初始化</h2>
             </div>
             <hr/>
 

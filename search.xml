@@ -56,6 +56,66 @@
     
     
     <entry>
+      <title>����VRChat��unity����������������VR�����¶�������</title>
+      <link href="2020/01/28/modelCreate/"/>
+      <url>2020/01/28/modelCreate/</url>
+      
+        <content type="html"><![CDATA[<h2 id="׼������"><a href="#׼������" class="headerlink" title="׼������"></a>׼������</h2><ol><li>һ���ɰ���ģ�ͣ���λ��ڿ��򣬵�ȻҲ�������Լ���ģ�ģ�Ϊ�˷�����������ÿ���<br>������ģ�Ͷ��δ����Ͷ����䲼Ȩ�����⣬ģ��������Ѱ�һ��߽�ģ����</li><li>unity�������õ��ǻ���2018.4.20f1�汾��</li><li>blender��2.8x���ϣ���Ϊ2.7��ǰ�İ汾�����ǲ�һ���ģ�</li><li>һ��VR�豸�������õ��ǻ���HTC VIVE�豸���в�����</li></ol><h2 id="����Ҫ������ƪ������Ҫ�߱��L���֪ʶ�Ͷ���"><a href="#����Ҫ������ƪ������Ҫ�߱��L���֪ʶ�Ͷ���" class="headerlink" title="����Ҫ������ƪ������Ҫ�߱��Ļ���֪ʶ�Ͷ���"></a>����Ҫ������ƪ������Ҫ�߱��Ļ���֪ʶ�Ͷ���</h2><ol><li>Ҫ��һ����unity����������Ҫ���ö�������������</li><li>Ҫ�˽�һ�¼���ģ�͵Ĺؼ������Ȩ�أ���������̬���ȵȣ�</li><li>�˽�VR׷�ٵĻ���ԭ���ͷ�ʽ���Լ�LimbIK��ԭ��</li><li>��Ĵ��Ժ�˫��</li></ol><h2 id="blender�L�ȡ"><a href="#blender�L�ȡ" class="headerlink" title="blender�Ļ�ȡ"></a>blender�Ļ�ȡ</h2><p>blender����Ϊģ��Ԥ������һ��ǿ��Ĺ��ߣ���ȡ�ĵط��кܶ࣬����;����ѡ��һ�����ɣ�</p><ol><li><p>Steam������blenderֱ�����ء��������в�Ҫѡ�����°棬�°���¹���һ����˵���ȶ���</p></li><li><p>��Ӧ���߰ٶ�����blender�������أ���������2.8x���Ƿ����°�İ汾���������°���¹��ܲ��ȶ���</p></li><li><p>Github���߱�ĵط�����blender�����ϰ�����������Զ����ؼ��ɡ�</p></li></ol><p><img src="https://i.loli.net/2021/01/30/cuqrhsefLty6gJ1.png" alt="Steam��Blender����"></p><h2 id="��ȡBlender��g��Ԥ�������-Cats"><a href="#��ȡBlender��g��Ԥ�������-Cats" class="headerlink" title="��ȡBlender��ģ��Ԥ�������-Cats"></a>��ȡBlender��ģ��Ԥ�������-Cats</h2><p>Cats��Ϊһ��ǿ���ģ��Ԥ����������߱�ǿ���ģ�ͼ򵥲�⹦��</p><p>ע�⣺Cats�Ĳ��ֻ�����ڼ򵥵�ģ�Ͳ�⣬����ģ�Ϳ��ܻ�����⣨�������Լ�����ģ�ͣ�</p><p>��Ȼ��Blender��Ԥ���������ֹһ�֣�����ֻ����һ�ֽ������</p><ol><li>���ȣ���Github����Github������Cats Blender Plugin�����ض�Ӧ�Ĳ��������������֮����һ��zip�ļ���<br><img src="https://i.loli.net/2021/01/30/IFhRzSWcxgs8f1y.png" alt="Cats-Blender�������"></li></ol><ol start="2"><li>��Blender�����Ϸ��Ŀ�����Ŀ�У�ѡ��Edit��ѡ��Perfrences<br><img src="https://i.loli.net/2021/01/30/skdYES93ZjN5alH.png" alt="Blender�ڲ�����"></li></ol><ol start="3"><li>ѡ��install����Cats��zip�ļ����룬Ȼ�������ò��������Blender�󼴿���Ч<br><img src="https://i.loli.net/2021/01/30/NVOQDL9KgAwEP2u.png" alt="����Cats���"></li></ol><h2 id="��ȡVRChat�ϴ����"><a href="#��ȡVRChat�ϴ����" class="headerlink" title="��ȡVRChat�ϴ����"></a>��ȡVRChat�ϴ����</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> blender </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Blender </tag>
+            
+            <tag> unity </tag>
+            
+            <tag> ��ģ��� </tag>
+            
+            <tag> VR���� </tag>
+            
+            <tag> HTC VIVE </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>��ʳ�ס��Ե���ţ�����ζ�������Ͳ�����</title>
+      <link href="2020/01/28/Beef/"/>
+      <url>2020/01/28/Beef/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> ʳ�� </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ʳ�� </tag>
+            
+            <tag> ��ʳ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>IOT_Links 拯救嵌入式利器！Vscode嵌入式完全集成，和Keil说再见</title>
       <link href="2020/01/13/Keil_Assitance/"/>
       <url>2020/01/13/Keil_Assitance/</url>
@@ -91,7 +151,7 @@
       <link href="2020/01/13/STM32_All_in_One/"/>
       <url>2020/01/13/STM32_All_in_One/</url>
       
-        <content type="html"><![CDATA[<h2 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h2><ol><li>本教程可用于概念复习，速成。</li><li>本教程只讲基于Robomaster和Robocon需要使用到的模块，很少用到的模块不会做特别说明（以教程实用性为主）。</li></ol><h2 id="基础概念和术语"><a href="#基础概念和术语" class="headerlink" title="基础概念和术语"></a>基础概念和术语</h2><p><strong>Stm32：</strong><br>32位微控制器，（位数越多，功能越多，功耗也可以越低，主核速度越快处理能力就越快）<br>Cortex-M3内核，是ARM公司的一款内核。</p><p><strong>电源（VBAT\VDD\VSS\VDDA\VSSA\VREF+\VRES-）：</strong><br>通常为纽扣电池，一般板子上面的这种字样代表其正极。<br>如果不确定是否正极，可以用电表直接测量两个引脚之间的电压差来确定对应的正负极。</p><p><strong>晶振IO：</strong><br>（OSC）（产生频率）主晶振IO，RTC晶振IO。</p><p><strong>下载IO：</strong><br>用于JTAG下载的IO：JTMS, JTCK,JTDI,TTDO,NJTRST。</p><p><strong>BOOT IO：</strong><br>BOOT0,BOOT1,用于设计启动方式，跳线帽的连接会导致其启动方式改变。</p><p><strong>复位IO：</strong><br>NRST用于外部的复位，上面的5部分IO叫最小系统。</p><p><strong>GPIO（宏义）：</strong><br>专用器件线，如I2C,SPI,SDIO,FSMC,DCMI,普通原件的GPIO,蜂鸣器，LED，KEY,以及其他的IO。</p><p><strong>Flash：</strong><br>掉电保护储存器（擦除次数有限）。</p><p><strong>SRAM：</strong><br>临时保护储存器（断电不保护）。</p><p><strong>常用工具和术语：</strong><br>参考手册：可以理解为官方的说明文档，可以看到所有对应模块的使用功能和相应的寄存器配置方式。<br>数据手册：能看到对应板子的具体的内存映射，引脚介绍。<br>原理图：能看到对应的引脚的封装的功能，每个引脚对应能干什么。<br>固件库：就是编写代码对应的使用库<br>库函数：对应的官方.h文件里面对应的封装好的函数。<br>寄存器：就是封装之后对应的位置的函数的应用。</p><h2 id="LED灯的点亮，GPIO的使用原理，GPIO输出应用"><a href="#LED灯的点亮，GPIO的使用原理，GPIO输出应用" class="headerlink" title="LED灯的点亮，GPIO的使用原理，GPIO输出应用"></a>LED灯的点亮，GPIO的使用原理，GPIO输出应用</h2><h3 id="基础原理说明"><a href="#基础原理说明" class="headerlink" title="基础原理说明"></a>基础原理说明</h3><p>GPIO是指板子中所有对应的引脚（即I/O口（或者说I/O引脚）），引脚能配置成为不同的输出方式，这里能直接使用LED灯是因为对应的引脚已经连接到识别灯上面，并被焊接到板子上面了，所以直接使能对应的引脚能使能LED灯。</p><h3 id="常见的输入输出模式详细解释"><a href="#常见的输入输出模式详细解释" class="headerlink" title="常见的输入输出模式详细解释"></a>常见的输入输出模式详细解释</h3><p>※常见的I/O输入和输出方式有以下八种：</p><p><strong>输入模式：</strong></p><ul><li>输入浮空（GPIO_Mode_IN_FLOATING）</li><li>输入上拉(GPIO_Mode_IPU)</li><li>输入下拉(GPIO_Mode_IPD)</li><li>模拟输入(GPIO_Mode_AIN)</li></ul><p><strong>输出模式：</strong></p><ul><li>开漏输出(GPIO_Mode_Out_OD)</li><li>开漏复用功能(GPIO_Mode_AF_OD)</li><li>推挽式输出(GPIO_Mode_Out_PP)</li><li>推挽式复用功能(GPIO_Mode_AF_PP)</li></ul><p><strong>详细解释：</strong></p><p>输入方式方面：</p><ol><li><p>输入浮空：</p><p> 浮空就是逻辑器件与引脚即不接高电平，也不接低电平。由于逻辑器件的内部结构，当它输入引脚悬空时，相当于该引脚接了高电平。一般实际运用时，引脚不建议悬空，易受干扰。通俗讲就是浮空就是浮在空中，就相当于此端口在默认情况下什么都不接，呈高阻态，这种设置在数据传输时用的比较多。浮空最大的特点就是电压的不确定性，它可能是0V，也可能是VCC，还可能是介于两者之间的某个值（最有可能） 浮空一般用来做ADC输入用，这样可以减少上下拉电阻对结果的影响。</p></li><li><p>输入上拉模式：</p><p> 上拉就是把点位拉高，比如拉到Vcc。上拉就是将不确定的信号通过一个电阻嵌位在高电平。电阻同时起到限流的作用。弱强只是上拉电阻的阻值不同，没有什么严格区分。可以理解为上拉就是在没有输入信号的时候，I/O口的状态为1（也就是高电平）。</p></li><li><p>输入下拉：</p><p> 就是把电压拉低，拉到GND。与上拉原理相似。可以理解为下拉就是在没有输入信号的时候，I/O口的状态为0（也就是低电平）。</p></li><li><p>模拟输入：</p><p> 模拟输入是指传统方式的输入，数字输入是输入PCM数字信号，即0,1的二进制数字信号，通过数模转换，转换成模拟信号，经前级放大进入功率放大器，功率放大器还是模拟的。可以理解为将本来离散的变量转换为连接变化态的模拟量（离散点转换成为一条平滑的曲线）。</p></li></ol><p><strong>输出方式方面：</strong></p><ol><li><p>开漏输出：</p><p> 输出端相当于三极管的集电极，要得到高电平状态需要上拉电阻才行，适合于做电流型的驱动，其吸收电流的能力相对强（一般20mA以内）。<br> 可以理解为，当内部想要输出的电平为1（高电平）的时候，对应的MOS管被截止了，此时I/O口其实是没有驱动能力的，为高阻态，需要外部连接上拉电阻才可以实现高电平，才可以驱动数字器件。内部输出为0（低电平）的时候，MOS管导通，I/O口输出为低电平。一下是对应的开漏输出的对应参考图。</p></li><li><p>开漏复用功能：</p><p> 可以理解为GPIO口被用作第二功能时的配置情况（即并非作为通用IO口使用）。端口必须配置成复用功能输出模式（推挽或开漏）。具体I/O口被用作第二功能的时候，对应的第二功能可以在原理图里面查看。</p></li><li><p>推挽式输出：</p><p> 可以输出高，低电平，连接数字器件;推挽结构一般是指两个三级管分别受到互补信号的控制，总是在一个三极管导通的时候另一个截止。高低电平由IC的电源低定。推挽电路是两个参数相同的三极管或MOSFET，以推挽方式存在于电路中，各负责正负半周的波形方法任务，电路工作时，两只对称的功率开关管每次只有一个导通，所以导通损耗小，效率高。输出即可以向负载灌电流。推拉式输出级即提高电路的负载能力，又提高开关速度。一下是推挽输出的示意图。</p></li><li><p>推挽式复用功能：</p><p> 可以理解为GPIO口被用作第二功能时的配置情况（并非作为通用IO口使用）</p></li></ol><h3 id="常见的输入输出简单解释"><a href="#常见的输入输出简单解释" class="headerlink" title="常见的输入输出简单解释"></a>常见的输入输出简单解释</h3><p><strong>猴子都可以看得懂的人话解释：</strong></p><p>输入模式</p><ul><li>输入浮空（GPIO_Mode_IN_FLOATING）：浮空输入，啥都不接，可以用作KEY识别，RX</li><li>输入上拉(GPIO_Mode_IPU)：上拉电阻，不接东西的时候默认状态为1</li><li>输入下拉(GPIO_Mode_IPD)：下拉电阻，不接东西的时候默认状态为0</li><li>模拟输入(GPIO_Mode_AIN)：散点变成一条平滑的曲线，应用在ADC里面的模拟输入，或者低功耗下面省电</li></ul><p>输出模式</p><ul><li>开漏输出(GPIO_Mode_Out_OD)：输出0的时候相当于接GND，输出1的时候相当于浮空（高阻态），需要外接上拉才可以实现高电平。可以通过外部设备的上下拉控制内部设备的高低电平状态，实现双向控制。</li><li>开漏复用功能(GPIO_Mode_AF_OD)：同上，不过会换个功能。</li><li>推挽式输出(GPIO_Mode_Out_PP)：输出0等于接GND，输出1等于接VCC</li><li>推挽式复用功能(GPIO_Mode_AF_PP)：同上，换个功能。</li></ul><p><strong>使能对应的功能之前需要相应的配置，小学生都知道开门之前要先找到对应的钥匙。</strong></p><p>以下是参考代码（基于基本库）：</p><pre class=" language-C"><code class="language-C">//初始化灯void GPIO_QuickInit(void){    GPIO_InitTypeDef GPIO_InitStructure;    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOC|RCC_APB2Periph_GPIOD,ENABLE);    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_12;    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_Out_PP;    GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;    GPIO_Init(GPIOA,&GPIO_InitStructure);    GPIO_SetBits(GPIOA,GPIO_Pin_12);    }</code></pre><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol><li>注意，LED灯是低电平的时候亮，高电平的时候不亮</li><li>使用的时候注意配置头文件的包含关系，不要循环包含，否则在编译情况下有可能会出现报错的情况。</li></ol><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h2><ol><li>本教程可用于概念复习，速成。</li><li>本教程只讲基于Robomaster和Robocon需要使用到的模块，很少用到的模块不会做特别说明（以教程实用性为主）。</li></ol><h2 id="基础概念和术语"><a href="#基础概念和术语" class="headerlink" title="基础概念和术语"></a>基础概念和术语</h2><p><strong>Stm32：</strong><br>32位微控制器，（位数越多，功能越多，功耗也可以越低，主核速度越快处理能力就越快）<br>Cortex-M3内核，是ARM公司的一款内核。</p><p><strong>电源（VBAT\VDD\VSS\VDDA\VSSA\VREF+\VRES-）：</strong><br>通常为纽扣电池，一般板子上面的这种字样代表其正极。<br>如果不确定是否正极，可以用电表直接测量两个引脚之间的电压差来确定对应的正负极。</p><p><strong>晶振IO：</strong><br>（OSC）（产生频率）主晶振IO，RTC晶振IO。</p><p><strong>下载IO：</strong><br>用于JTAG下载的IO：JTMS, JTCK,JTDI,TTDO,NJTRST。</p><p><strong>BOOT IO：</strong><br>BOOT0,BOOT1,用于设计启动方式，跳线帽的连接会导致其启动方式改变。</p><p><strong>复位IO：</strong><br>NRST用于外部的复位，上面的5部分IO叫最小系统。</p><p><strong>GPIO（宏义）：</strong><br>专用器件线，如I2C,SPI,SDIO,FSMC,DCMI,普通原件的GPIO,蜂鸣器，LED，KEY,以及其他的IO。</p><p><strong>Flash：</strong><br>掉电保护储存器（擦除次数有限）。</p><p><strong>SRAM：</strong><br>临时保护储存器（断电不保护）。</p><p><strong>常用工具和术语：</strong><br>参考手册：可以理解为官方的说明文档，可以看到所有对应模块的使用功能和相应的寄存器配置方式。<br>数据手册：能看到对应板子的具体的内存映射，引脚介绍。<br>原理图：能看到对应的引脚的封装的功能，每个引脚对应能干什么。<br>固件库：就是编写代码对应的使用库<br>库函数：对应的官方.h文件里面对应的封装好的函数。<br>寄存器：就是封装之后对应的位置的函数的应用。</p><h2 id="LED灯的点亮，GPIO的使用原理，GPIO输出应用"><a href="#LED灯的点亮，GPIO的使用原理，GPIO输出应用" class="headerlink" title="LED灯的点亮，GPIO的使用原理，GPIO输出应用"></a>LED灯的点亮，GPIO的使用原理，GPIO输出应用</h2><h3 id="基础原理说明"><a href="#基础原理说明" class="headerlink" title="基础原理说明"></a>基础原理说明</h3><p>GPIO是指板子中所有对应的引脚（即I/O口（或者说I/O引脚）），引脚能配置成为不同的输出方式，这里能直接使用LED灯是因为对应的引脚已经连接到识别灯上面，并被焊接到板子上面了，所以直接使能对应的引脚能使能LED灯。</p><h3 id="常见的输入输出模式详细解释"><a href="#常见的输入输出模式详细解释" class="headerlink" title="常见的输入输出模式详细解释"></a>常见的输入输出模式详细解释</h3><p>※常见的I/O输入和输出方式有以下八种：</p><p><strong>输入模式：</strong></p><ul><li>输入浮空（GPIO_Mode_IN_FLOATING）</li><li>输入上拉(GPIO_Mode_IPU)</li><li>输入下拉(GPIO_Mode_IPD)</li><li>模拟输入(GPIO_Mode_AIN)</li></ul><p><strong>输出模式：</strong></p><ul><li>开漏输出(GPIO_Mode_Out_OD)</li><li>开漏复用功能(GPIO_Mode_AF_OD)</li><li>推挽式输出(GPIO_Mode_Out_PP)</li><li>推挽式复用功能(GPIO_Mode_AF_PP)</li></ul><p><strong>详细解释：</strong></p><p>输入方式方面：</p><ol><li><p>输入浮空：</p><p> 浮空就是逻辑器件与引脚即不接高电平，也不接低电平。由于逻辑器件的内部结构，当它输入引脚悬空时，相当于该引脚接了高电平。一般实际运用时，引脚不建议悬空，易受干扰。通俗讲就是浮空就是浮在空中，就相当于此端口在默认情况下什么都不接，呈高阻态，这种设置在数据传输时用的比较多。浮空最大的特点就是电压的不确定性，它可能是0V，也可能是VCC，还可能是介于两者之间的某个值（最有可能） 浮空一般用来做ADC输入用，这样可以减少上下拉电阻对结果的影响。</p></li><li><p>输入上拉模式：</p><p> 上拉就是把点位拉高，比如拉到Vcc。上拉就是将不确定的信号通过一个电阻嵌位在高电平。电阻同时起到限流的作用。弱强只是上拉电阻的阻值不同，没有什么严格区分。可以理解为上拉就是在没有输入信号的时候，I/O口的状态为1（也就是高电平）。</p></li><li><p>输入下拉：</p><p> 就是把电压拉低，拉到GND。与上拉原理相似。可以理解为下拉就是在没有输入信号的时候，I/O口的状态为0（也就是低电平）。</p></li><li><p>模拟输入：</p><p> 模拟输入是指传统方式的输入，数字输入是输入PCM数字信号，即0,1的二进制数字信号，通过数模转换，转换成模拟信号，经前级放大进入功率放大器，功率放大器还是模拟的。可以理解为将本来离散的变量转换为连接变化态的模拟量（离散点转换成为一条平滑的曲线）。</p></li></ol><p><strong>输出方式方面：</strong></p><ol><li><p>开漏输出：</p><p> 输出端相当于三极管的集电极，要得到高电平状态需要上拉电阻才行，适合于做电流型的驱动，其吸收电流的能力相对强（一般20mA以内）。<br> 可以理解为，当内部想要输出的电平为1（高电平）的时候，对应的MOS管被截止了，此时I/O口其实是没有驱动能力的，为高阻态，需要外部连接上拉电阻才可以实现高电平，才可以驱动数字器件。内部输出为0（低电平）的时候，MOS管导通，I/O口输出为低电平。一下是对应的开漏输出的对应参考图。</p></li><li><p>开漏复用功能：</p><p> 可以理解为GPIO口被用作第二功能时的配置情况（即并非作为通用IO口使用）。端口必须配置成复用功能输出模式（推挽或开漏）。具体I/O口被用作第二功能的时候，对应的第二功能可以在原理图里面查看。</p></li><li><p>推挽式输出：</p><p> 可以输出高，低电平，连接数字器件;推挽结构一般是指两个三级管分别受到互补信号的控制，总是在一个三极管导通的时候另一个截止。高低电平由IC的电源低定。推挽电路是两个参数相同的三极管或MOSFET，以推挽方式存在于电路中，各负责正负半周的波形方法任务，电路工作时，两只对称的功率开关管每次只有一个导通，所以导通损耗小，效率高。输出即可以向负载灌电流。推拉式输出级即提高电路的负载能力，又提高开关速度。一下是推挽输出的示意图。</p></li><li><p>推挽式复用功能：</p><p> 可以理解为GPIO口被用作第二功能时的配置情况（并非作为通用IO口使用）</p></li></ol><h3 id="常见的输入输出简单解释"><a href="#常见的输入输出简单解释" class="headerlink" title="常见的输入输出简单解释"></a>常见的输入输出简单解释</h3><p><strong>猴子都可以看得懂的人话解释：</strong></p><p>输入模式</p><ul><li>输入浮空（GPIO_Mode_IN_FLOATING）：浮空输入，啥都不接，可以用作KEY识别，RX</li><li>输入上拉(GPIO_Mode_IPU)：上拉电阻，不接东西的时候默认状态为1</li><li>输入下拉(GPIO_Mode_IPD)：下拉电阻，不接东西的时候默认状态为0</li><li>模拟输入(GPIO_Mode_AIN)：散点变成一条平滑的曲线，应用在ADC里面的模拟输入，或者低功耗下面省电</li></ul><p>输出模式</p><ul><li>开漏输出(GPIO_Mode_Out_OD)：输出0的时候相当于接GND，输出1的时候相当于浮空（高阻态），需要外接上拉才可以实现高电平。可以通过外部设备的上下拉控制内部设备的高低电平状态，实现双向控制。</li><li>开漏复用功能(GPIO_Mode_AF_OD)：同上，不过会换个功能。</li><li>推挽式输出(GPIO_Mode_Out_PP)：输出0等于接GND，输出1等于接VCC</li><li>推挽式复用功能(GPIO_Mode_AF_PP)：同上，换个功能。</li></ul><p><strong>使能对应的功能之前需要相应的配置，小学生都知道开门之前要先找到对应的钥匙。</strong></p><p>以下是参考代码（基于基本库）：</p><pre class=" language-C"><code class="language-C">//初始化灯void GPIO_QuickInit(void){    GPIO_InitTypeDef GPIO_InitStructure;    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOC|RCC_APB2Periph_GPIOD,ENABLE);    GPIO_InitStructure.GPIO_Pin=GPIO_Pin_12;    GPIO_InitStructure.GPIO_Mode=GPIO_Mode_Out_PP;    GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;    GPIO_Init(GPIOA,&GPIO_InitStructure);    GPIO_SetBits(GPIOA,GPIO_Pin_12);    }</code></pre><h3 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h3><ol><li>注意，LED灯是低电平的时候亮，高电平的时候不亮</li><li>使用的时候注意配置头文件的包含关系，不要循环包含，否则在编译情况下有可能会出现报错的情况。</li></ol><h2 id="RCC输出引脚MCO的初始化和使用"><a href="#RCC输出引脚MCO的初始化和使用" class="headerlink" title="RCC输出引脚MCO的初始化和使用"></a>RCC输出引脚MCO的初始化和使用</h2>]]></content>
       
       
       <categories>

@@ -56,11 +56,11 @@
     
     
     <entry>
-      <title>����VRChat��unity����������������VR�����¶�������</title>
+      <title>基于VRChat和unity，如何让你的老婆在VR控制下动起来？</title>
       <link href="2020/01/28/modelCreate/"/>
       <url>2020/01/28/modelCreate/</url>
       
-        <content type="html"><![CDATA[<h2 id="׼������"><a href="#׼������" class="headerlink" title="׼������"></a>׼������</h2><ol><li>һ���ɰ���ģ�ͣ���λ��ڿ��򣬵�ȻҲ�������Լ���ģ�ģ�Ϊ�˷�����������ÿ���<br>������ģ�Ͷ��δ����Ͷ����䲼Ȩ�����⣬ģ��������Ѱ�һ��߽�ģ����</li><li>unity�������õ��ǻ���2018.4.20f1�汾��</li><li>blender��2.8x���ϣ���Ϊ2.7��ǰ�İ汾�����ǲ�һ���ģ�</li><li>һ��VR�豸�������õ��ǻ���HTC VIVE�豸���в�����</li></ol><h2 id="����Ҫ������ƪ������Ҫ�߱��L���֪ʶ�Ͷ���"><a href="#����Ҫ������ƪ������Ҫ�߱��L���֪ʶ�Ͷ���" class="headerlink" title="����Ҫ������ƪ������Ҫ�߱��Ļ���֪ʶ�Ͷ���"></a>����Ҫ������ƪ������Ҫ�߱��Ļ���֪ʶ�Ͷ���</h2><ol><li>Ҫ��һ����unity����������Ҫ���ö�������������</li><li>Ҫ�˽�һ�¼���ģ�͵Ĺؼ������Ȩ�أ���������̬���ȵȣ�</li><li>�˽�VR׷�ٵĻ���ԭ���ͷ�ʽ���Լ�LimbIK��ԭ��</li><li>��Ĵ��Ժ�˫��</li></ol><h2 id="blender�L�ȡ"><a href="#blender�L�ȡ" class="headerlink" title="blender�Ļ�ȡ"></a>blender�Ļ�ȡ</h2><p>blender����Ϊģ��Ԥ������һ��ǿ��Ĺ��ߣ���ȡ�ĵط��кܶ࣬����;����ѡ��һ�����ɣ�</p><ol><li><p>Steam������blenderֱ�����ء��������в�Ҫѡ�����°棬�°���¹���һ����˵���ȶ���</p></li><li><p>��Ӧ���߰ٶ�����blender�������أ���������2.8x���Ƿ����°�İ汾���������°���¹��ܲ��ȶ���</p></li><li><p>Github���߱�ĵط�����blender�����ϰ�����������Զ����ؼ��ɡ�</p></li></ol><p><img src="https://i.loli.net/2021/01/30/cuqrhsefLty6gJ1.png" alt="Steam��Blender����"></p><h2 id="��ȡBlender��g��Ԥ�������-Cats"><a href="#��ȡBlender��g��Ԥ�������-Cats" class="headerlink" title="��ȡBlender��ģ��Ԥ�������-Cats"></a>��ȡBlender��ģ��Ԥ�������-Cats</h2><p>Cats��Ϊһ��ǿ���ģ��Ԥ����������߱�ǿ���ģ�ͼ򵥲�⹦��</p><p>ע�⣺Cats�Ĳ��ֻ�����ڼ򵥵�ģ�Ͳ�⣬����ģ�Ϳ��ܻ�����⣨�������Լ�����ģ�ͣ�</p><p>��Ȼ��Blender��Ԥ���������ֹһ�֣�����ֻ����һ�ֽ������</p><ol><li>���ȣ���Github����Github������Cats Blender Plugin�����ض�Ӧ�Ĳ��������������֮����һ��zip�ļ���<br><img src="https://i.loli.net/2021/01/30/IFhRzSWcxgs8f1y.png" alt="Cats-Blender�������"></li></ol><ol start="2"><li>��Blender�����Ϸ��Ŀ�����Ŀ�У�ѡ��Edit��ѡ��Perfrences<br><img src="https://i.loli.net/2021/01/30/skdYES93ZjN5alH.png" alt="Blender�ڲ�����"></li></ol><ol start="3"><li>ѡ��install����Cats��zip�ļ����룬Ȼ�������ò��������Blender�󼴿���Ч<br><img src="https://i.loli.net/2021/01/30/NVOQDL9KgAwEP2u.png" alt="����Cats���"></li></ol><h2 id="��ȡVRChat�ϴ����"><a href="#��ȡVRChat�ϴ����" class="headerlink" title="��ȡVRChat�ϴ����"></a>��ȡVRChat�ϴ����</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ol><li>一个可爱的模型（这次基于可莉，当然也可以是自己建模的，为了方便所以这次用可莉）<br>（由于模型二次创作和二次配布权限问题，模型请自行寻找或者建模！）</li><li>unity（本次用的是基于2018.4.20f1版本）</li><li>blender（2.8x以上，因为2.7以前的版本界面是不一样的）</li><li>一个VR设备（本次用的是基于HTC VIVE设备进行操作）</li></ol><h2 id="你需要看懂这篇文章需要具备的基本知识和东西"><a href="#你需要看懂这篇文章需要具备的基本知识和东西" class="headerlink" title="你需要看懂这篇文章需要具备的基本知识和东西"></a>你需要看懂这篇文章需要具备的基本知识和东西</h2><ol><li>要有一定的unity基础（至少要看得懂动画控制器）</li><li>要了解一下几个模型的关键术语（如权重，骨骼，形态键等等）</li><li>了解VR追踪的基本原理和方式，以及LimbIK等原理</li><li>你的大脑和双手</li></ol><h2 id="blender的获取"><a href="#blender的获取" class="headerlink" title="blender的获取"></a>blender的获取</h2><p>blender是作为模型预处理的一个强大的工具，获取的地方有很多，以下途径任选择一个即可：</p><ol><li><p>Steam中搜索blender直接下载。（属性中不要选择最新版，新版的新功能一般来说不稳定）</p></li><li><p>必应或者百度搜索blender官网下载，建议现在2.8x但是非最新版的版本（现在最新版的新功能不稳定）</p></li><li><p>Github或者别的地方搜索blender的整合包，带插件的自动下载即可。</p></li></ol><p><img src="https://i.loli.net/2021/01/30/cuqrhsefLty6gJ1.png" alt="Steam中Blender界面"></p><h2 id="获取Blender的模型预处理插件-Cats"><a href="#获取Blender的模型预处理插件-Cats" class="headerlink" title="获取Blender的模型预处理插件-Cats"></a>获取Blender的模型预处理插件-Cats</h2><p>Cats作为一款强大的模型预处理插件，具备强大的模型简单拆解功能</p><p>注意：Cats的拆解只能用于简单的模型拆解，复杂模型可能会出问题（比如你自己建的模型）</p><p>当然，Blender的预处理插件不止一种，这里只给出一种解决方案</p><ol><li>首先，打开Github，在Github中搜索Cats Blender Plugin，下载对应的插件包（下载下来之后是一个zip文件）<br><img src="https://i.loli.net/2021/01/30/IFhRzSWcxgs8f1y.png" alt="Cats-Blender插件界面"></li></ol><ol start="2"><li>打开Blender，在上方的控制栏目中，选择Edit，选择Perfrences<br><img src="https://i.loli.net/2021/01/30/skdYES93ZjN5alH.png" alt="Blender内部界面"></li></ol><ol start="3"><li>选择install，将Cats的zip文件导入，然后勾上启用插件，重启Blender后即可生效<br><img src="https://i.loli.net/2021/01/30/NVOQDL9KgAwEP2u.png" alt="导入Cats插件"></li></ol><h2 id="获取VRChat上传插件"><a href="#获取VRChat上传插件" class="headerlink" title="获取VRChat上传插件"></a>获取VRChat上传插件</h2>]]></content>
       
       
       <categories>
@@ -76,11 +76,11 @@
             
             <tag> unity </tag>
             
-            <tag> ��ģ��� </tag>
-            
-            <tag> VR���� </tag>
-            
             <tag> HTC VIVE </tag>
+            
+            <tag> 建模相关 </tag>
+            
+            <tag> VR控制 </tag>
             
         </tags>
       
@@ -89,7 +89,7 @@
     
     
     <entry>
-      <title>��ʳ�ס��Ե���ţ�����ζ�������Ͳ�����</title>
+      <title>【食谱】迷迭香牛排配风味烤土豆和菠菜泥</title>
       <link href="2020/01/28/Beef/"/>
       <url>2020/01/28/Beef/</url>
       
@@ -98,16 +98,16 @@
       
       <categories>
           
-          <category> ʳ�� </category>
+          <category> 食谱 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> ʳ�� </tag>
+            <tag> 食谱 </tag>
             
-            <tag> ��ʳ </tag>
+            <tag> 美食 </tag>
             
         </tags>
       

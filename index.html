@@ -331,7 +331,9 @@
 
 
 <script>
-    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
 
@@ -639,10 +641,10 @@
             container: document.getElementById('dplayer'),
             autoplay: 'false' === 'true',
             theme: '#42b983',
-            loop: 'false' === 'true',
+            loop: 'true' === 'true',
             lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
             preload: 'auto',
-            volume: Number('0.5'),
+            volume: Number('0.3'),
             video: {
                 url: 'https://www.bilibili.com/video/BV17W411V7bU',
                 pic: 'https://i.loli.net/2021/02/01/HL5X3cbI2ThnD7y.jpg',

@@ -31,7 +31,7 @@
     
     
     <entry>
-      <title>3dmax���п�ݼ������ѵ����</title>
+      <title>3dmax所有快捷键和疑难点汇总</title>
       <link href="2021/02/01/3dmax_SpeedShot/"/>
       <url>2021/02/01/3dmax_SpeedShot/</url>
       
@@ -40,7 +40,7 @@
       
       <categories>
           
-          <category> 3dmax��Ӧ��ݼ� </category>
+          <category> 3dmax对应快捷键 </category>
           
       </categories>
       
@@ -49,7 +49,7 @@
             
             <tag> 3dmax </tag>
             
-            <tag> ��ģ </tag>
+            <tag> 建模 </tag>
             
         </tags>
       
@@ -58,16 +58,16 @@
     
     
     <entry>
-      <title>blender���п�ݼ������ѵ����</title>
+      <title>blender所有快捷键和疑难点汇总</title>
       <link href="2021/02/01/Blender_SpeedShot/"/>
       <url>2021/02/01/Blender_SpeedShot/</url>
       
-        <content type="html"><![CDATA[<h1 id="��ݼ�"><a href="#��ݼ�" class="headerlink" title="��ݼ�"></a>��ݼ�</h1><h2 id="��ͼ��أ���ʹ���������ֲ��������£���"><a href="#��ͼ��أ���ʹ���������ֲ��������£���" class="headerlink" title="��ͼ��أ���ʹ���������ֲ��������£���"></a>��ͼ��أ���ʹ���������ֲ��������£���</h2><p>�л���X����ͼ��Nub 3��</p><p>�л���Y����ͼ��Nub 1��</p><p>�л���Z����ͼ��Nub 7��</p><h2 id="������g�������"><a href="#������g�������" class="headerlink" title="������ģ�������"></a>������ģ�������</h2><p>���죨�༭״̬�£���G��</p><p>�������༭״̬�£���Shift + A��</p><p>��ǰ�㡢�ߡ��渴�����༭״̬�£���E��</p><p>��ת�������ɶ���ת��R��RR��</p><p>������С�Ŵ�S��</p><h1 id="���ѵ�"><a href="#���ѵ�" class="headerlink" title="���ѵ�"></a>���ѵ�</h1><ol><li>��2.8x�汾���ϻ���ִ���Ĭ��������޷��޸Ĵ���������ֵ�����</li></ol><p>�����������ϵͳ���������ϵͳѡ��ѡ��ȫ�ֳ���<br>wo<br>2. </p>]]></content>
+        <content type="html"><![CDATA[<h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><h2 id="视图相关（仅使用于有数字侧键的情况下）"><a href="#视图相关（仅使用于有数字侧键的情况下）" class="headerlink" title="视图相关（仅使用于有数字侧键的情况下）"></a>视图相关（仅使用于有数字侧键的情况下）</h2><p>切换到X正视图（Nub 3）</p><p>切换到Y侧视图（Nub 1）</p><p>切换到Z顶视图（Nub 7）</p><h2 id="基本建模命令相关"><a href="#基本建模命令相关" class="headerlink" title="基本建模命令相关"></a>基本建模命令相关</h2><p>拉伸（编辑状态下）（G）</p><p>创建（编辑状态下）（Shift + A）</p><p>当前点、线、面复拉（编辑状态下）（E）</p><p>旋转，无自由度旋转（R，RR）</p><p>物体缩小放大（S）</p><h1 id="疑难点"><a href="#疑难点" class="headerlink" title="疑难点"></a>疑难点</h1><ol><li>在2.8x版本以上会出现创建默认物体后无法修改创建体型数值的情况</li></ol><p>解决方法：在系统设置里面的系统选项选择全局撤销<br>wo<br>2. </p>]]></content>
       
       
       <categories>
           
-          <category> Blender��ݼ� </category>
+          <category> Blender快捷键 </category>
           
       </categories>
       
@@ -76,7 +76,7 @@
             
             <tag> Blender </tag>
             
-            <tag> ��ģ </tag>
+            <tag> 建模 </tag>
             
         </tags>
       
